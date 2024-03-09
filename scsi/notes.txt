@@ -1,0 +1,11 @@
+Address Decode: 16L8
+Byte Enable: 16V8
+Async Bus Control: 22V10
+Arbitration: 16R4
+
+Byte Enable to A0-1, SIZ0-1:
+
+53C700 has BE0 = D7-D0, BE1 = D15-D8, BE2 = D23-D16, BE3 = D31-D24
+
+Connect these backwards to the memory:
+D7-D0 => D31-D24, D15-D8 => D23-D16, etc.
